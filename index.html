@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JMP Refrigeração</title>
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+
+<link rel="stylesheet" href="./src/css/reset.css">
+<link rel="stylesheet" href="./src/css/estilos.css">
+<link rel="stylesheet" href="./src/css/responsivo.css">
+</head>
+<body>
+    <header class="cabecalho">
+        <img src="./src/imagens/JMP2-Photoroom.png" 
+        alt="JMP Refrigeração">
+    </header>
+    <main class="container">
+        <h1 class="produtos">Produtos</h1>
+        <div class="filtros">
+            <div class="categorias-cartas">
+                <label for="categoria">Categoria</label>
+                 <select id="categoria" class="categoria">
+                     <option value="">Selecione uma marca</option>
+                     <option value="brastemp">Brastemp</option>
+                     <option value="consul">Consul</option>
+                     <option value="eletrolux">Eletrolux</option>
+                     <option value="continental">Continental</option>
+                     <option value="ge">GE</option>
+                     <option value="bosh">Bosh</option>
+                 </select>
+            </div>
+
+            <div class="nome-cartas">
+        <label for="nome">Nome da peça</label>
+        <input type="text" id="nome" placeholder="Buscar pelo nome...">
+    </div>
+
+            <div class="preco-cartas">
+                <label for="preco">Preço máximo (R$)</label>
+                <input type="text" id="preco" class="preco" placeholder="EX: 100,00">
+            </div>
+            <button class="btn-filtrar">Aplicar filtros</button>
+        </div>
+        <ul class="cartas">
+            <li class="carta" data-categoria="Eletrolux" data-preco="80">
+                <img src="./src/imagens/Valvula ltd.webp" alt="">
+                <div class="informacoes">
+                    <h2 class="nome-personagem">Válvula Eletrolux LTD</h2>
+                    <span class="categoria">Eletrolux LTD</span>
+                    <span class="preco">R$ 80,00</span>
+                    <a href="http://wa.me/5521982885780?text=Olá, quero comprar a Válvula Eletrolux LTD!" class="btn-comprar" target="_blank">Comprar</a>
+                </div>
+                </li>
+                <li class="carta" data-categoria="Consul Brastemp" data-preco="150">
+                    <img src="./src/imagens/Mecanismo curto.jpg" alt="" />
+                    <div class="informacoes">
+                        <h2 class="nome-personagem">Mecanismo eixo curto</h2>
+                        <span class="categoria">Brastemp Consul</span>
+                        <span class="preco">R$ 150,00</span>
+                        <a href="http://wa.me/55519999999?text=Olá, quero comprar o Mecanismo eixo curto!" class="btn-comprar" target="_blank">Comprar</a>
+                    </div>
+                </li>
+                <li class="carta" data-categoria="Brastemp" data-preco="90">
+                    <img src="./src/imagens/Valvula dupla.webp" alt="" />
+                    <div class="informacoes">
+                        <h2 class="nome-personagem">Válvula BWH11 BWH15</h2>
+                        <span class="categoria">Brastemp</span>
+                        <span class="preco">R$ 90,00</span>
+                        <a href="http://wa.me/55519999999?text=Olá, quero comprar a Válvula BWH11 BWH15!" class="btn-comprar" target="_blank">Comprar</a>
+                    </div>
+                </li>
+                <li class="carta" data-categoria="Brastemp, Consul" data-preco="30">
+                    <img src="./src/imagens/Panela.jpg" alt="" />
+                    <div class="informacoes">
+                        <h2 class="nome-personagem">Panela máquina de lavar</h2>
+                        <span class="categoria">Brastemp Consul</span>
+                        <span class="preco">R$ 30,00</span>
+                        <a href="http://wa.me/55519999999?text=Olá, quero comprar a Panela máquina de lavar!" class="btn-comprar" target="_blank">Comprar</a>
+                    </div>
+                </li>
+                <li class="carta" data-categoria="Brastemp, Consul" data-preco="28">
+                    <img src="./src/imagens/eixo longo.jpg" alt="" />
+                    <div class="informacoes">
+                        <h2 class="nome-personagem">Eixo longo</h2>
+                        <span class="categoria">Brastemp Consul</span>
+                        <span class="preco">R$ 28,00</span>
+                        <a href="http://wa.me/55519999999?text=Olá, quero comprar o Eixo longo!" class="btn-comprar" target="_blank">Comprar</a>
+                    </div>
+                </li>
+                <li class="carta" data-categoria="Brastemp, Consul" data-preco="28">
+                    <img src="./src/imagens/eixo curto.jpg" alt="" />
+                    <div class="informacoes">
+                        <h2 class="nome-personagem">Eixo curto</h2>
+                        <span class="categoria">Brastemp Consul</span>
+                        <span class="preco">R$ 28,00</span>
+                        <a href="http://wa.me/55519999999?text=Olá, quero comprar o Eixo curto!" class="btn-comprar" target="_blank">Comprar</a>
+                    </div>
+                </li>
+                <li class="carta" data-categoria="" data-preco="8">
+                <img src="./src/imagens/Pé máquina.jpg" alt="">
+                <div class="informacoes">
+                    <h2 class="nome-personagem">Pé máquina de lavar</h2>
+                    <span class="categoria">Universal</span>
+                    <span class="preco">R$ 8,00</span>
+                    <a href="http://wa.me/5521982885780?text=Olá, quero comprar o Pé máquina de lavar!" class="btn-comprar" target="_blank">Comprar</a>
+                </div>
+                <li class="carta" data-categoria="" data-preco="20">
+                <img src="./src/imagens/Mangueira saída curva.jpg" alt="">
+                <div class="informacoes">
+                    <h2 class="nome-personagem">Mangueira de saída 1,80mt</h2>
+                    <span class="categoria">Bocão curvada</span>
+                    <span class="preco">R$ 20,00</span>
+                    <a href="http://wa.me/5521982885780?text=Olá, quero comprar a Mangueira de saída 1,80mt bocão curvada!" class="btn-comprar" target="_blank">Comprar</a>
+                </div>
+                <li class="carta" data-categoria="" data-preco="20">
+                <img src="./src/imagens/Mangueira saída reta.jpg" alt="">
+                <div class="informacoes">
+                    <h2 class="nome-personagem">Mangueira de saída 1,80mt</h2>
+                    <span class="categoria">Boca fina reta</span>
+                    <span class="preco">R$ 20,00</span>
+                    <a href="http://wa.me/5521982885780?text=Olá, quero comprar a Mangueira de saída 1,80mt boca fina!" class="btn-comprar" target="_blank">Comprar</a>
+                </div>
+                <li class="carta" data-categoria="" data-preco="40">
+                <img src="./src/imagens/Capacitor 30+12.webp" alt="">
+                <div class="informacoes">
+                    <h2 class="nome-personagem">Capacitor 30+12 uf</h2>
+                    <span class="categoria">Ar condicionado</span>
+                    <span class="preco">R$ 40,00</span>
+                    <a href="http://wa.me/5521982885780?text=Olá, quero comprar o Capacitor 30+12 uf!" class="btn-comprar" target="_blank">Comprar</a>
+                </div>
+                <li class="carta" data-categoria="" data-preco="50">
+                <img src="./src/imagens/Capacitor 30+12.webp" alt="">
+                <div class="informacoes">
+                    <h2 class="nome-personagem">Capacitor 55+5 uf</h2>
+                    <span class="categoria">Ar condicionado</span>
+                    <span class="preco">R$ 50,00</span>
+                    <a href="http://wa.me/5521982885780?text=Olá, quero comprar o Capacitor 55+5 uf!" class="btn-comprar" target="_blank">Comprar</a>
+                </div>
+                <li class="carta" data-categoria="Eletrolux" data-preco="60">
+                <img src="./src/imagens/Termostato tsv0008-09p.jpg" alt="">
+                <div class="informacoes">
+                    <h2 class="nome-personagem">Termostato TSV0008-09p</h2>
+                    <span class="categoria">Geladeira Eletrolux</span>
+                    <span class="preco">R$ 60,00</span>
+                    <a href="http://wa.me/5521982885780?text=Olá, quero comprar o Termostato TSV0008-09p!" class="btn-comprar" target="_blank">Comprar</a>
+                </div>
+                <li class="carta" data-categoria="Brastemp, Consul" data-preco="25">
+                <img src="./src/imagens/Kit came.jpg" alt="">
+                <div class="informacoes">
+                    <h2 class="nome-personagem">Kit Came</h2>
+                    <span class="categoria">Brastemp Consul</span>
+                    <span class="preco">R$ 25,00</span>
+                    <a href="http://wa.me/5521982885780?text=Olá, quero comprar o Kit Came!" class="btn-comprar" target="_blank">Comprar</a>
+                </div>
+                <li class="carta" data-categoria="Brastemp, Consul" data-preco="90">
+                <img src="./src/imagens/Ventilador Brastemp.webp" alt="">
+                <div class="informacoes">
+                    <h2 class="nome-personagem">Motor Ventilador</h2>
+                    <span class="categoria">Brastemp Consul</span>
+                    <span class="preco">R$ 90,00</span>
+                    <a href="http://wa.me/5521982885780?text=Olá, quero comprar o Motor Ventilador Brastemp!" class="btn-comprar" target="_blank">Comprar</a>
+                </div>
+                <li class="carta" data-categoria="Bosh, Continental, GE" data-preco="35">
+                <img src="./src/imagens/Sensor de temperatura GE.jpg" alt="">
+                <div class="informacoes">
+                    <h2 class="nome-personagem">Sensor Temperatura GE</h2>
+                    <span class="categoria">Continental Bosh GE</span>
+                    <span class="preco">R$ 35,00</span>
+                    <a href="http://wa.me/5521982885780?text=Olá, quero comprar o Sensor de Temperatura GE!" class="btn-comprar" target="_blank">Comprar</a>
+                </div>
+                <li class="carta" data-categoria="Bosh, Continental, GE" data-preco="35">
+                <img src="./src/imagens/Fusível GE.jpg" alt="">
+                <div class="informacoes">
+                    <h2 class="nome-personagem">Fusível GE</h2>
+                    <span class="categoria">Continental Bosh GE</span>
+                    <span class="preco">R$ 35,00</span>
+                    <a href="http://wa.me/5521982885780?text=Olá, quero comprar o Fusível GE!" class="btn-comprar" target="_blank">Comprar</a>
+                </div>
+                <li class="carta" data-categoria="Eletrolux" data-preco="50">
+                <img src="./src/imagens/Interface lte12v2.jpg" alt="">
+                <div class="informacoes">
+                    <h2 class="nome-personagem">Placa Interface LTE12 V2</h2>
+                    <span class="categoria">Eletrolux</span>
+                    <span class="preco">R$ 50,00</span>
+                    <a href="http://wa.me/5521982885780?text=Olá, quero comprar o Fusível GE!" class="btn-comprar" target="_blank">Comprar</a>
+                </div>
+                
+                
+</ul>
+        </ul>
+    </main>
+    <footer class="rodape"></footer>
+    <script src="./src/js/index.js"></script>
+</body>
+</html>
